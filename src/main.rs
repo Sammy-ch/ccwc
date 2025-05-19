@@ -40,7 +40,7 @@ fn main() -> Result<(), Box<dyn Error>> {
 
     let line_count = buffer.lines().count();
     let word_count = buffer.split_whitespace().count();
-    let byte_count = buffer.as_bytes().len();
+    let byte_count = buffer.len();
 
     let show_all = !args.lines && !args.words && !args.bytes;
 
